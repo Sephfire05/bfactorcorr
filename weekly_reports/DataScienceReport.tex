@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{xifthen}
+
+\newcommand{\xx}[1][]{{ \ifthenelse{\isempty{#1}}{\textcolor{red}{XXX}}{\textcolor{red}{~(XXX {#1} XXX)~}} }}
+\newcommand{\newpar}{{\\}}
+
+\title{Proteomics Research}
+\author{Jason and Bernie}
+\date{Spring 2019}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+\xx \\
+This document details a weekly report of the data science portion of the group project. 
+Proteomics is the study and effects of all proteomes inside of a cell and how it can modify cell characteristics of cell structure and function.\newpar
+\newpar
+Using 1 pdb for datamining and refining of \newpar
+\newpar
+The student and research mentor meet at least weekly to track the progress of the project throughout the working timeline.\newpar
+
+To initiate each meeting, the following three questions are used:\\
+What have you done in the past week?\\
+What you want to do in the next week?\\
+What is the challenge you want to solve?\newpar
+\end{abstract} 
+
+\begin{center}
+Meetings Summaries
+\end{center}
+
+\section*{Meetings}
+
+\subsection*{Meeting 1: March 29, 2019}
+    \begin{itemize}
+        \item What did we do last week? \\ 
+        Had a Data Science based meeting to discuss the github document architecture, 3 ways for github website creation, Difference between Master and Development branches. Set up Overleaf document reports.
+        \item What is the next challenge? \\ 
+        Total restructure of the github and to look at templates to get an idea.  Outputting files into documentable format (csv, table, excel, etc).  Obtaining the mean b factor per residue of one protein and how to replicate it. Make sure my list matches original csv list given. 
+        \item What is the plan to address it? \\ 
+        Exposure to github templates to see the standard. Figure out how to put python notebook tests of DataFrames to tables or CSVs.  Learn how to use the sorting commands in pandas to make sure our lists match.  Using the 1a2t protein, I successfully extract all unique values of residues into an index, and their value counts as the indicator of how many b factors in that residue.  Have downloaded a pandas and python / pandas data structure app and am currently reading a Python Data Analytics book to keep experimenting. 
+        %Do not know how to grab those rows of b factor values for the residue number into an array for all of them.  Need guidance with isolating those values and/or creating an advanced linked list dictionary to see each value that matches the index.
+        
+    \end{itemize}
+\subsection*{Meeting 1: April 5, 2019}
+    \begin{itemize}
+        \item What did we do last week? \\ 
+        Created optimized pandas code for quickly gathering a single proteins residues bfac averages. Created new github with proper template, created Development and Master branch. 
+        
+        \item What is the next challenge? \\ 
+        Performing a comparative sort with the original PDB CSV file for equal format. Defining a function that will let me grab every pdb file from the list, grab the res b factor averages for each one, and write it to a file.
+        \xx[Need some one on one Data Science guidance about the general github template format and how to direct outputs to folders.  Basically a Data Science Project rundown.]
+        
+        \item What is the plan to address it? \\ 
+        Looking at different types of sorts functions in Pandas and testing them for accuracy. Will need to look at the Pandas Documentation and Data Analytics Book for reference. 
+        After that list is compared, refine a broader function using the same methods to perform these calculations through all the list.
+        
+        
+    \end{itemize}
+
+\end{document}
